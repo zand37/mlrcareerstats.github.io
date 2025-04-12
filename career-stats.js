@@ -520,15 +520,15 @@ function mlr_pa_loader() {
 					continue;
 				}
 				var team = l['Batter Team'];
-				var pteam = l['Result at neutral park'];
+				var resultatneutral = l['Result at neutral park'];
 				var season = l['Season'];
-				var bruh = l['Inning']
-				var hitter22 = l['Pitcher WPA']
-				console.log("bruh", bruh)
-				console.log("hitter22", hitter22)
+				var rbi = l['RBI']
+				var run = l['Run']
+				console.log("rbi", rbi)
+				console.log("run", run)
+				console.log("result at neutral park:", resultatneutral);
 				console.log("Season:", season);
 				console.log("Batter Team:", team);
-				console.log("Pitcher Team:", pteam);
 				console.log("current_teams:", current_teams);
 				console.log("current_teams[season]:", current_teams[season]); 
 				if(team in current_teams[season]) {
