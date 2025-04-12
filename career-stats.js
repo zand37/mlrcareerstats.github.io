@@ -525,9 +525,11 @@ function mlr_pa_loader() {
 				var season = l['Season'];
 				var rbi = l['RBI'];
 				var run = l['Run'];
+				var gameID = l['Game ID'];
 				console.log("rbi", rbi);
 				console.log("run", run);
 				console.log("result at neutral park:", resultatneutral);
+				console.log("Game ID", gameID);
 				console.log("Season:", season);
 				console.log("Batter Team:", team);
 				console.log("current_teams:", current_teams);
