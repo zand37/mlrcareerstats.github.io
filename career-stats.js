@@ -422,7 +422,7 @@ function mlr_pa_loader() {
 			//Then, go over each line in the PA logs. Then add splits to each category when applicable. Perhaps this is faster.
 			//Finally do the player stats lol. 
 	
-			var all_teams = ["TOR","ATL","S1MIN","MIN","PHI","HOU","ARI","PIT","OAK","NYM","BAL","DET","SDP","SEA","BOS","CLE","MTL","SFG","LAD","MIL","COL","TEX","WSH","STL","NYY","KCR","ANA","MIA","CHC","CWS","CIN","TBR"]
+			var all_teams = ["TOR","ATL","S1MIN","MIN","PHI","HOU","ARI","PIT","OAK","NYM","BAL","DET","SDP","SEA","BOS","CLE","MTL","SFG","LAD","MIL","COL","TEX","WSH","STL","NYY","KCR","ANA","FLA","CHC","CWS","CIN","TBR"]
 			
 			// UPDATE THIS ON SEASON CHANGE!!!!!!!
 			var current_teams = {
@@ -522,6 +522,9 @@ function mlr_pa_loader() {
 				var team = l['Batter Team'];
 				var pteam = l['Pitcher Team'];
 				var season = l['Season'];
+				console.log("Season:", season);
+				console.log("current_teams:", current_teams);
+				console.log("current_teams[season]:", current_teams[season]); 
 				if(team in current_teams[season]) {
 					team = current_teams[season][team];
 				}
