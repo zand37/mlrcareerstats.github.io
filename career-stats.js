@@ -520,12 +520,13 @@ function mlr_pa_loader() {
 					continue;
 				}
 				var team = l['Batter Team'];
+				var pteam = l['Pitcher Team'];
 				var resultatneutral = l['Result at neutral park'];
 				var season = l['Season'];
-				var rbi = l['RBI']
-				var run = l['Run']
-				console.log("rbi", rbi)
-				console.log("run", run)
+				var rbi = l['RBI'];
+				var run = l['Run'];
+				console.log("rbi", rbi);
+				console.log("run", run);
 				console.log("result at neutral park:", resultatneutral);
 				console.log("Season:", season);
 				console.log("Batter Team:", team);
