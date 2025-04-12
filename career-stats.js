@@ -523,6 +523,8 @@ function mlr_pa_loader() {
 				var pteam = l['Pitcher Team'];
 				var season = l['Season'];
 				console.log("Season:", season);
+				console.log("Batter Team:", team);
+				console.log("Pitcher Team:", pteam);
 				console.log("current_teams:", current_teams);
 				console.log("current_teams[season]:", current_teams[season]); 
 				if(team in current_teams[season]) {
