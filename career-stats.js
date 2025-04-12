@@ -522,6 +522,10 @@ function mlr_pa_loader() {
 				var team = l['Batter Team'];
 				var pteam = l['Pitcher Team'];
 				var season = l['Season'];
+				var bruh = l['bruh']
+				var hitter22 = l['Hitter']
+				console.log("bruh", bruh)
+				console.log("hitter22", hitter22)
 				console.log("Season:", season);
 				console.log("Batter Team:", team);
 				console.log("Pitcher Team:", pteam);
