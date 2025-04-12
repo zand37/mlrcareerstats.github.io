@@ -520,10 +520,10 @@ function mlr_pa_loader() {
 					continue;
 				}
 				var team = l['Batter Team'];
-				var pteam = l['Pitcher Team'];
+				var pteam = l['Result at neutral park'];
 				var season = l['Season'];
-				var bruh = l['bruh']
-				var hitter22 = l['Hitter']
+				var bruh = l['Inning']
+				var hitter22 = l['Pitcher WPA']
 				console.log("bruh", bruh)
 				console.log("hitter22", hitter22)
 				console.log("Season:", season);
