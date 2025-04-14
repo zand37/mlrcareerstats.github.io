@@ -50,7 +50,7 @@ $.ajax({
 });
 $.ajax({
 	type: "GET",
-	url: "https://pullgang.github.io/AllSeasonsExceptCurrent.csv", // UPDATE THIS ON SEASON CHANGE!!!!!!!
+	url: "https://pullgang.github.io/AllSeasonsExceptCurrent9.csv", // UPDATE THIS ON SEASON CHANGE!!!!!!!
 	dataType: "text",
 	success: function (data) { previousSeasonData = data; }
 });
