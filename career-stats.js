@@ -44,31 +44,31 @@ window.googleDocCallback = function () { return true; };
 
 $.ajax({
 	type: "GET",
-	url: "https://pullgang.github.io/PlayerList.csv",
+	url: "https://mvh1015.github.io/PlayerList.csv",
 	dataType: "text",
 	success: function (data) { playerListData = data; }
 });
 $.ajax({
 	type: "GET",
-	url: "https://pullgang.github.io/AllSeasonsExceptCurrent9.csv", // UPDATE THIS ON SEASON CHANGE!!!!!!!
+	url: "https://mvh1015.github.io/AllSeasonsExceptCurrent9.csv", // UPDATE THIS ON SEASON CHANGE!!!!!!!
 	dataType: "text",
 	success: function (data) { previousSeasonData = data; }
 });
 $.ajax({
 	type: "GET",
-	url: "https://pullgang.github.io/OldNames.csv",
+	url: "https://mvh1015.github.io/OldNames.csv",
 	dataType: "text",
 	success: function (data) { oldSeasonPlayers = data; }
 });
 $.ajax({
 	type: "GET",
-	url: "https://pullgang.github.io/roster_s1_no_reddit_special_p.txt",
+	url: "https://mvh1015.github.io/roster_s1_no_reddit_special_p.txt",
 	dataType: "text",
 	success: function (data) { season1RosterData = data; }
 });
 $.ajax({
 	type: "GET",
-	url: "https://pullgang.github.io/AllPlayerType.csv",
+	url: "https://mvh1015.github.io/AllPlayerType.csv",
 	dataType: "text",
 	success: function (data) { playerTypeData = data; }
 });
