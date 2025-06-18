@@ -425,6 +425,9 @@ function mlr_pa_loader() {
 			var all_teams = ["TOR","ATL","S1MIN","MIN","PHI","HOU","ARI","PIT","OAK","NYM","BAL","DET","SDP","SEA","BOS","CLE","MTL","SFG","LAD","MIL","COL","TEX","WSH","STL","NYY","KCR","ANA","FLA","CHC","CWS","CIN","TBR"]
 			
 			// UPDATE THIS ON SEASON CHANGE!!!!!!!
+			// If a team changes their acronym, you have to go back through their existence.
+			// Example: MIA changed to FLA in S11, so I needed to go back to s3-s10 and add all those lines. 
+			// Do I need to do this after each season for infinite? Idk, pull did. -isaac
 			var current_teams = {
 				1: {
 					'MIN': 'S1MIN',
@@ -447,33 +450,41 @@ function mlr_pa_loader() {
 					'MTL': 'ATL',
 					'TBD': 'TBR',
 					'CLE': 'CIN',
-					'TEX': 'CLE'
+					'TEX': 'CLE',
+					'MIA': 'FLA',
 				},
 				4: {
 					'LAA': 'TEX',
 					'TEX': 'CLE',
 					'CLE': 'ANA',
-					'TBD': 'TBR'
+					'TBD': 'TBR',
+					'MIA': 'FLA',
 				},
 				5: {
 					'LAA': 'TEX',
 					'TEX': 'CLE',
-					'CLE': 'ANA'
+					'CLE': 'ANA',
+					'MIA': 'FLA',
 				},
 				6: {
 					'LAA': 'ANA',
+					'MIA': 'FLA',
 				},
 				7: {
 					'LAA': 'ANA',
+					'MIA': 'FLA',
 				},
 				8: {
 					'LAA': 'ANA',
+					'MIA': 'FLA',
 				},
 				9: {
 					'LAA': 'ANA',
+					'MIA': 'FLA',
 				},
 				10: {
 					'LAA': 'ANA',
+					'MIA': 'FLA',
 				},
 				11: {
 					'LAA': 'ANA',
@@ -3121,7 +3132,7 @@ Split (can select multiple): <span class="form-group col-sm-8">
 		});
 
 				//Add teams to team selector
-				var all_teams = ["ANA","ARI","ATL","BAL","BOS","CHC","CIN","CLE","COL","CWS","DET","FLA","HOU","KCR","LAD","MIL","MIN","MIA","MTL","NYM","NYY","OAK","PHI","PIT","S1MIN","SDP","SEA","SFG","STL","TBR","TEX","TOR","WSH"]
+				var all_teams = ["ANA","ARI","ATL","BAL","BOS","CHC","CIN","CLE","COL","CWS","DET","FLA","HOU","KCR","LAD","MIL","MIN","MTL","NYM","NYY","OAK","PHI","PIT","S1MIN","SDP","SEA","SFG","STL","TBR","TEX","TOR","WSH"]
 				for(team in all_teams) {
 					$('#team').append($('<option>', {
 						value: all_teams[team],
