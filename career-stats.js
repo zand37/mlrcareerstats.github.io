@@ -1930,7 +1930,7 @@ Split (can select multiple): <span class="form-group col-sm-8">
 </section>
 
 <footer id="fakefooter">
-						<p class="copyright">&copy; <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">pull</a></p>
+						<p class="copyright">&copy; <a href="https://docs.google.com/spreadsheets/d/1NQBQCYpHX4Kd_KnFxejk-td3aUfsDrpXm_Z4PdAt41o/">isaac</a></p>
 					</footer>
 				`);
 
