@@ -1,1 +1,1 @@
-LOM pls, i don't want to do this. Make your own career stats thing. This site is only for family and friends. Leave me alone.
+temp career stats site
